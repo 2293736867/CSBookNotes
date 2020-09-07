@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-09-07T16:31:42" hostname="pc" time="0.422">
+  <properties/>
+  <testcase name="test" classname="Tests" time="0.422"/>
+  <system-out><![CDATA[Hello Spring
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
