@@ -1,4 +1,3 @@
-@[TOC]
 # 1 `Spring`简介
 `Spring`是一个轻量级`Java`开发框架，最早由`Rod Johnson`创建，目的是为了解决企业级应用开发的业务逻辑层和其他各层的耦合问题，是一个分层的`Java SE/EE full-stack`轻量级开源框架，为开发`Java`应用程序提供全面的基础架构支持。
 
@@ -179,6 +178,7 @@ public class Tests {
 ## 4.9 运行
 ### 4.9.1 测试
 直接点击测试类旁边的按钮即可：
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200907234955345.png)
 
 若出现如下错误：
@@ -317,5 +317,5 @@ class Tests {
 
 # 6 源码
 
-- [Github](https://github.com/2293736867/CSBookNotes/tree/master/Spring/Chapter1)
-- [码云](https://gitee.com/u6b7b5fc3/CSBookNotes/tree/master/Spring/Chapter1)
+- [Github](https://github.com/2293736867/CSBookNotes/tree/master/Spring/Chapter1/JavaSpringDemo)
+- [码云](https://gitee.com/u6b7b5fc3/CSBookNotes/tree/master/Spring/Chapter1/JavaSpringDemo)
