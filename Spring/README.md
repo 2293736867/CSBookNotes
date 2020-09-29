@@ -34,3 +34,9 @@
 - [内容](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter5/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter5/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter5/answer.md)
+
+## 第6章：`MyBatis`
+
+- [内容](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/README.md)
+- [习题](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/exercise.md)
+- [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/answer.md)
