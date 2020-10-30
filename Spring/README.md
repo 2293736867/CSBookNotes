@@ -35,8 +35,14 @@
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter5/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter5/answer.md)
 
-## 第6章：`MyBatis`
+## 第6章：`MyBatis`集成
 
 - [内容](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter6/answer.md)
+
+## 第7章：`MyBatis`映射器+动态`SQL`
+
+- [内容](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter7/README.md)
+- [习题](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter7/exercise.md)
+- [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/Spring/Chapter7/answer.md)
