@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.oneToOne.dao.PersonDao">
+    <resultMap id="personMap1" type="pers.oneToOne.entity.Person">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <association property="card" column="idcard_id" javaType="pers.oneToOne.entity.IdCard"
+                     select="pers.oneToOne.dao.IdCardDao.selectCodeById"/>
+    </resultMap>
+    <select id="selectPersonById1" parameterType="Integer" resultMap="personMap1">
+        select *
+        from person
+        where id = #{id}
+    </select>
+
+    <resultMap id="personMap2" type="pers.oneToOne.entity.Person">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <association property="card" javaType="pers.oneToOne.entity.IdCard">
+            <id property="id" column="idcard_id"/>
+            <result property="code" column="code"/>
+        </association>
+    </resultMap>
+
+    <select id="selectPersonById2" parameterType="Integer" resultMap="personMap2">
+        select p.*, ic.code
+        from person p,
+             idcard ic
+        where p.idcard_id = ic.id
+          and p.id = #{id}
+    </select>
+
+    <select id="selectPersonById3" parameterType="Integer" resultType="pers.oneToOne.pojo.PersonPOJO">
+        select p.*, ic.code
+        from person p,
+             idcard ic
+        where p.idcard_id = ic.id
+          and p.id = #{id}
+    </select>
+</mapper>

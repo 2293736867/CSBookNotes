@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dynamicSQL.DynamicSQLTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2020-10-30T01:13:58" hostname="pc" time="1.944">
+  <properties/>
+  <testcase name="testSet" classname="dynamicSQL.DynamicSQLTest" time="1.896"/>
+  <testcase name="testWhere" classname="dynamicSQL.DynamicSQLTest" time="0.007"/>
+  <testcase name="testBind" classname="dynamicSQL.DynamicSQLTest" time="0.005"/>
+  <testcase name="testTrim" classname="dynamicSQL.DynamicSQLTest" time="0.006"/>
+  <testcase name="testForeach" classname="dynamicSQL.DynamicSQLTest" time="0.026"/>
+  <testcase name="testIf" classname="dynamicSQL.DynamicSQLTest" time="0.002"/>
+  <testcase name="testChoose" classname="dynamicSQL.DynamicSQLTest" time="0.001"/>
+  <system-out><![CDATA[1
+[User(id:1	name:999999	age:39)]
+[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:5	name:test2	age:10), User(id:6	name:test1	age:0), User(id:7	name:test2	age:10), User(id:8	name:test1	age:0), User(id:9	name:test2	age:10), User(id:10	name:test1	age:0), User(id:11	name:test2	age:10), User(id:12	name:test1	age:0), User(id:13	name:test2	age:10)]
+[]
+[]
+[User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:6	name:test1	age:0), User(id:8	name:test1	age:0), User(id:10	name:test1	age:0), User(id:12	name:test1	age:0)]
+[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:5	name:test2	age:10), User(id:6	name:test1	age:0), User(id:7	name:test2	age:10), User(id:8	name:test1	age:0), User(id:9	name:test2	age:10), User(id:10	name:test1	age:0), User(id:11	name:test2	age:10), User(id:12	name:test1	age:0), User(id:13	name:test2	age:10)]
+[User(id:5	name:test2	age:10), User(id:7	name:test2	age:10), User(id:9	name:test2	age:10), User(id:11	name:test2	age:10), User(id:13	name:test2	age:10)]
+[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0)]
+[]
+[]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

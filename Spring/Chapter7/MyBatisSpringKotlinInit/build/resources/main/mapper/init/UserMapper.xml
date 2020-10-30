@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.init.dao.UserDao">
+    <resultMap id="BaseResultMap" type="pers.init.entity.User">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="age" jdbcType="SMALLINT" property="age"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        id, `name`, age
+    </sql>
+
+    <select id="selectAll" resultType="pers.init.entity.User">
+        select * from user
+    </select>
+    <select id="selectById" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user where id = #{id}
+    </select>
+
+    <select id="selectByMap" resultType="pers.init.entity.User" parameterType="map">
+        select * from user where name like concat('%', #{name}, '%') and age = #{age}
+    </select>
+
+    <select id="selectByPOJO" resultType="pers.init.entity.User" parameterType="pers.init.pojo.UserPOJO">
+        select * from user where name like concat('%', #{name}, '%') and age = #{age}
+    </select>
+
+    <insert id="insertUser1" parameterType="pers.init.entity.User" keyProperty="id" useGeneratedKeys="true">
+        insert into user(name, age) values (#{name}, #{id})
+    </insert>
+
+
+    <insert id="insertUser2" parameterType="pers.init.entity.User">
+        <selectKey keyProperty="id" resultType="integer" order="BEFORE">
+            select if(max(id) is null,1,max(id)+1) as newId from user
+        </selectKey>
+        insert into user(id,name,age) values(#{id},#{name},#{age})
+    </insert>
+
+    <update id="updateUser" parameterType="pers.init.entity.User">
+        update user set name=#{name}, age=#{age} where id = #{id}
+    </update>
+
+    <delete id="deleteUser" parameterType="Integer">
+        delete from user where id = #{id}
+    </delete>
+
+    <sql id="column">
+        id,name,age
+    </sql>
+    <select id="selectBySqlColumn" resultType="pers.init.entity.User">
+        select <include refid="column"/> from user
+    </select>
+
+    <select id="selectReturnMap" resultType="Map">
+        select * from user
+    </select>
+
+    <resultMap id="testPOJO" type="pers.init.pojo.UserPOJO">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <select id="selectReturnPOJO" resultMap="testPOJO">
+        select * from user
+    </select>
+</mapper>

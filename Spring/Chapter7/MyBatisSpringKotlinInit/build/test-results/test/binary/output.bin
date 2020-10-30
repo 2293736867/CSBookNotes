@@ -1,0 +1,11 @@
+1
+ [User(id:1	name:999999	age:39)]
+è[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:5	name:test2	age:10), User(id:6	name:test1	age:0), User(id:7	name:test2	age:10), User(id:8	name:test1	age:0), User(id:9	name:test2	age:10), User(id:10	name:test1	age:0), User(id:11	name:test2	age:10), User(id:12	name:test1	age:0), User(id:13	name:test2	age:10)]
+[]
+[]
+±[User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:6	name:test1	age:0), User(id:8	name:test1	age:0), User(id:10	name:test1	age:0), User(id:12	name:test1	age:0)]
+è[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0), User(id:4	name:test1	age:0), User(id:5	name:test2	age:10), User(id:6	name:test1	age:0), User(id:7	name:test2	age:10), User(id:8	name:test1	age:0), User(id:9	name:test2	age:10), User(id:10	name:test1	age:0), User(id:11	name:test2	age:10), User(id:12	name:test1	age:0), User(id:13	name:test2	age:10)]
+™[User(id:5	name:test2	age:10), User(id:7	name:test2	age:10), User(id:9	name:test2	age:10), User(id:11	name:test2	age:10), User(id:13	name:test2	age:10)]
+=[User(id:1	name:999999	age:39), User(id:2	name:test1	age:0)]
+[]
+[]

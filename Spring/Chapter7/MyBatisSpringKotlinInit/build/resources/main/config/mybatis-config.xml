@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!--延迟加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--按需加载-->
+        <setting name="aggressiveLazyLoading" value="true"/>
+        <!--调试开关，打印执行的SQL-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+    </settings>
+    <mappers>
+        <!--initMapper-->
+        <mapper resource="mapper/init/UserMapper.xml" />
+        <mapper resource="mapper/init/TestMapper.xml" />
+        <!--一对一级联Mapper-->
+        <mapper resource="mapper/oneToOne/PersonMapper.xml" />
+        <mapper resource="mapper/oneToOne/IdCardMapper.xml" />
+        <!--一对多级联Mapper-->
+        <mapper resource="mapper/oneToMany/UserWithOrdersMapper.xml" />
+        <mapper resource="mapper/oneToMany/OrdersMapper.xml" />
+        <!--多对多级联Mapper-->
+        <mapper resource="mapper/manyToMany/OrdersWithProductMapper.xml" />
+        <!--动态SQL Mapper-->
+        <mapper resource="mapper/dynamicSQL/DynamicSQLMapper.xml" />
+    </mappers>
+</configuration>

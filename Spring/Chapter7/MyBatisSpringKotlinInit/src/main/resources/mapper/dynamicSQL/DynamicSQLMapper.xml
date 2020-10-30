@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.dynamicSQL.DynamicSQLDao">
+    <select id="selectByIf" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user where 1=1
+        <if test="name != null and name != ''">
+            and name like concat('%',#{name},'%')
+        </if>
+        <if test="age != null and age>0">
+            and age = #{age}
+        </if>
+    </select>
+
+    <select id="selectByChoose" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user where 1=1
+        <choose>
+            <when test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </when>
+            <when test="age != null and age>0">
+                and age=#{age}
+            </when>
+            <otherwise>
+                and id != 3
+            </otherwise>
+        </choose>
+    </select>
+
+    <select id="selectByTrim" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user
+        <trim prefix="where" prefixOverrides="and">
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+        </trim>
+    </select>
+
+    <select id="selectByWhere" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user
+        <where>
+            <if test="name != null and name != ''">
+                and name like concat('%',#{name},'%')
+            </if>
+            <if test="age != null and age>0">
+                and age=#{age}
+            </if>
+        </where>
+    </select>
+
+    <update id="updateBySet" parameterType="pers.init.entity.User">
+        update user
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="age != null and age > 0">
+                age = #{age}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <select id="selectByForeach" parameterType="Integer" resultType="pers.init.entity.User">
+        select * from user where id in
+        <foreach collection="list" item="item" index="index" open="(" separator="," close=")">#{item}</foreach>
+    </select>
+
+    <select id="selectByBind" parameterType="pers.init.entity.User" resultType="pers.init.entity.User">
+        <bind name="new_name" value="'%'+name+'%'"/>
+        select * from user where name like #{new_name}
+    </select>
+</mapper>

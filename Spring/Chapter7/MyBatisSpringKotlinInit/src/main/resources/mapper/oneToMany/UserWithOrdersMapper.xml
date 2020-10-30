@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.oneToMany.dao.UserWithOrdersDao">
+
+    <resultMap id="userAndOrder1" type="pers.oneToMany.entity.UserWithOrders">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <collection property="ordersList" ofType="pers.oneToMany.entity.Orders" column="id" select="pers.oneToMany.dao.OrdersDao.selectOrdersById"/>
+    </resultMap>
+    <select id="selectUserOrders1" parameterType="Integer" resultMap="userAndOrder1">
+        select * from user where id=#{id}
+    </select>
+
+    <resultMap id="userAndOrder2" type="pers.oneToMany.entity.UserWithOrders">
+        <id property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="age" column="age" />
+        <collection property="ordersList" ofType="pers.oneToMany.entity.Orders">
+            <id property="id" column="id" />
+            <result property="ordersn" column="ordersn"/>
+        </collection>
+    </resultMap>
+    <select id="selectUserOrders2" parameterType="Integer" resultMap="userAndOrder2">
+        select u.*,o.id,o.ordersn from user u,orders o where u.id = o.user_id and u.id = #{id}
+    </select>
+
+    <select id="selectUserOrders3" parameterType="Integer" resultType="pers.oneToMany.pojo.UserOrdersPOJO">
+        select u.*,o.id,o.ordersn from user u,orders o where u.id = o.user_id and u.id = #{id}
+    </select>
+</mapper>
