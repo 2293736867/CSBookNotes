@@ -300,7 +300,7 @@
 ### 10.2.3 具体算法
 - 确定申请资源二维数组`R[i,j]`，表示第`i`个进程申请第`j`个资源的数量
 - 如果`R[i,j]<=Need[i,j]`，下一步操作，否则报错，因为需要的资源已超过申请的最大值
-- 如果`R[i,j]<=Avaliable[i,j]`，进行下一步操作，否则认为无足够资源
+- 如果`R[i,j]<=Avaliable[j]`，进行下一步操作，否则认为无足够资源
 - 尝试分配资源，进行如下操作：`Avaliable[i,j]=Avaliable[i,j]-R[i,j]`，`Need[i,j]=Need[i,j]-R[i,j]`，`Allocation[i,j]=Allocation[i,j]+R[i,j]`
 - 进行安全性检测
 
