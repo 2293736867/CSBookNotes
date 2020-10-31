@@ -304,10 +304,10 @@
 - 尝试分配资源，进行如下操作：`Avaliable[j]=Avaliable[j]-R[i,j]`，`Need[i,j]=Need[i,j]-R[i,j]`，`Allocation[i,j]=Allocation[i,j]+R[i,j]`
 - 进行安全性检测
 
-其中安全性检测的关键是为每个进程设置一个布尔变量`Finish[i]`，若为`true`表示进程能够申请到资源，若为`false`表示不能申请到资源，同时设置一个会累加的二维数组`Work[j]`，并初始化为`Avaliable`，具体步骤：
+其中安全性检测的关键是为每个进程设置一个布尔变量`Finish[i]`，若为`true`表示进程能够申请到资源，若为`false`表示不能申请到资源，同时设置一个会累加的一维数组`Work`，并初始化为`Avaliable`，具体步骤：
 
 - 初始化：`Finish[i]=false`，`Work[j]=Avaliable[j]`
-- 寻找进程：找到一个`Finish[i]=false`且`Need[i,j]<=Work[i,j]`的进程
+- 寻找进程：找到一个`Finish[i]=false`且`Need[i,j]<=Work[j]`的进程
 - 分配资源：将上一步找到的进程进行资源分配，`Work[j]=Work[j]+Allocation[i,j]`，`Finish[i]=true`
 - 判断：循环上述步骤如果所有的`Finish[i]`都为`true`则处于安全状态
 
