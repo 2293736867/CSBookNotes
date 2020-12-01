@@ -24,7 +24,7 @@
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter4/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter4/answer.md)
 
-# 第四章：虚拟存储器
+# 第五章：虚拟存储器
 
 - [内容](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter5/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter5/exercise.md)
