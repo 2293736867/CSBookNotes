@@ -29,3 +29,9 @@
 - [内容](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter5/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter5/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter5/answer.md)
+
+# 第六章：输入输出系统
+
+- [内容](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/README.md)
+- [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/exercise.md)
+- [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/answer.md)
