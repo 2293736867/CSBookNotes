@@ -35,3 +35,9 @@
 - [内容](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter6/answer.md)
+
+# 第七章：文件管理
+
+- [内容](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter7/README.md)
+- [习题](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter7/exercise.md)
+- [参考解答](https://github.com/2293736867/CSBookNotes/blob/master/OperatingSystem/Chapter7/answer.md)
