@@ -1,8 +1,8 @@
 # 选择题
 
-1-5 BBBDC
+# 1-5 BBBDC
 
-6-10 DABCC
+# 6-10 DABCC
  
 # 简答题
 # 1
