@@ -18,3 +18,9 @@
 - [内容](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter3/README.md)
 - [习题](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter3/exercise.md)
 - [参考解答](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter3/answer.md)
+
+# 第四章：白盒测试
+
+- [内容](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter4/README.md)
+- [习题](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter4/exercise.md)
+- [参考解答](https://github.com/2293736867/CSBookNotes/blob/main/SoftwareTesting/Chapter4/answer.md)
